@@ -7,7 +7,7 @@ function Expenses(props) {
     <Card className="expenses">
       {props.items.map((expense, i) => (
         <ExpenseItem
-          index={i}
+          key={i}
           title={expense.title}
           amount={expense.amount}
           date={expense.date}
