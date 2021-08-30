@@ -22,7 +22,7 @@ function Expenses(props) {
           <ExpenseItem
             key={i}
             title={expense.title}
-            amount={expense.amount}
+            amount={parseFloat(expense.amount).toFixed(2)}
             date={expense.date}
           />
         ))}
