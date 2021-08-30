@@ -1,5 +1,6 @@
 import Expenses from "./components/Expenses";
 import ExpenseItem from "./components/ExpenseItem";
+import React from "react";
 
 function App() {
   const expenses = [
@@ -23,11 +24,19 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  // return React.createElement(
+  //   "div",
+  //   {},
+  //   React.createElement("h2", {}, "This is a list of your expenses!"),
+  //   React.createElement(Expenses, {items: expenses})
+  // );
+
   return (
     <div>
       <h2>This is a list of your expenses!</h2>
       <Expenses items={expenses}></Expenses>
-      
+
     </div>
   );
 }
