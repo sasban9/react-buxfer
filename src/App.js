@@ -52,7 +52,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
 
@@ -60,7 +60,7 @@ const App = () => {
         <NewExpense onAddExpense={addExpenseHandler} />
         <Expenses items={expenses}></Expenses>
       </div>
-    </div>
+    </>
   );
 };
 
